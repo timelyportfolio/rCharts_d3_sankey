@@ -10,13 +10,13 @@ require(rjson)
 #in form of source, target, value
 
 links <- matrix(unlist(
-  fromJSON(
+  rjson::fromJSON(
     file = "http://bost.ocks.org/mike/sankey/energy.json"
   )$links
 ),ncol = 3, byrow = TRUE)
 
 nodes <- unlist(
-  fromJSON(
+  rjson::fromJSON(
     file = "http://bost.ocks.org/mike/sankey/energy.json"
   )$nodes
 )
@@ -43,3 +43,5 @@ sankeyPlot$set(
   units = "TWh",
   title = "Sankey Diagram"
 )
+
+sankeyPlot
