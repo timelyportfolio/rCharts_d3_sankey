@@ -4,7 +4,7 @@ believe I copied/pasted from
 http://www.d3noob.org/2013/02/sankey-diagrams-description-of-d3js-code.html
 but have to think original source was Mike Bostock
 http://bost.ocks.org/mike/sankey/
-/*
+*/
 
 .node rect {
   cursor: move;
@@ -25,4 +25,8 @@ http://bost.ocks.org/mike/sankey/
 
 .link:hover {
   stroke-opacity: .5;
+}
+
+svg {
+  font: 10px sans-serif;
 }

@@ -6,6 +6,13 @@ Mike Bostock http://bost.ocks.org/mike/sankey/
 <script>
 var params = {{{ chartParams }}};
 
+params.units ? units = " " + params.units : units = "";
+
+//hard code these now but eventually make available
+var formatNumber = d3.format("0,.0f"),    // zero decimal places
+    format = function(d) { return formatNumber(d) + units; },
+    color = d3.scale.category20();
+
 var svg = d3.select('#' + params.id).append("svg")
     .attr("width", params.width)
     .attr("height", params.height);
@@ -13,9 +20,23 @@ var svg = d3.select('#' + params.id).append("svg")
 var sankey = d3.sankey()
     .nodeWidth(params.nodeWidth)
     .nodePadding(params.nodePadding)
-    .layout(params.layout);
+    .layout(params.layout)
+    .size([params.width,params.height]);
     
-var links = params.data;
+var path = sankey.link();
+    
+var data = params.data,
+    links = [],
+    nodes = [];
+    
+//get all source and target into nodes
+//will reduce to unique in the next step
+//also get links in object form
+data.source.forEach(function (d, i) {
+    nodes.push({ "name": data.source[i] });
+    nodes.push({ "name": data.target[i] });
+    links.push({ "source": data.source[i], "target": data.target[i], "value": +data.value[i] });
+}); 
 
 //now get nodes based on links data
 //thanks Mike Bostock https://groups.google.com/d/msg/d3-js/pl297cFtIQk/Eso4q_eBu1IJ
@@ -38,7 +59,8 @@ nodes.forEach(function (d, i) {
 
 sankey
   .nodes(nodes)
-  .links(links);
+  .links(links)
+  .layout(params.layout);
   
 var link = svg.append("g").selectAll(".link")
   .data(links)
@@ -76,7 +98,7 @@ node.append("text")
   .attr("text-anchor", "end")
   .attr("transform", null)
   .text(function (d) { return d.name; })
-.filter(function (d) { return d.x < width / 2; })
+.filter(function (d) { return d.x < params.width / 2; })
   .attr("x", 6 + sankey.nodeWidth())
   .attr("text-anchor", "start");
 
@@ -84,9 +106,9 @@ node.append("text")
   function dragmove(d) {
     d3.select(this).attr("transform", 
         "translate(" + (
-                   d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))
+                   d.x = Math.max(0, Math.min(params.width - d.dx, d3.event.x))
                 ) + "," + (
-                   d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
+                   d.y = Math.max(0, Math.min(params.height - d.dy, d3.event.y))
                 ) + ")");
         sankey.relayout();
         link.attr("d", path);
