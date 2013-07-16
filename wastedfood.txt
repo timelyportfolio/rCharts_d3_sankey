@@ -1,0 +1,15 @@
+https://sustainability.water.ca.gov/documents/18/3331370/Food+Waste+and+Energy.pdf
+Wasted Food, Wasted Energy: The Embedded Energy in Food Waste in the United States
+by Amanda D. Cuellar and Micahel E. Webber
+
+foodcategory  agriculture transportation foodhandling foodprocessing energylost2004
+grains 71.4 185 426 155 838 268
+vegetables 53.5 407 935 178 1580 381
+fruit 26.9 270 619 122 1040 234
+dairy 234 273 627 229 1360 436
+meatpoultryfish 778 284 652 238 1950 312
+eggs 97.1 32.0 73 27 229 72.0
+drybeanspeaslentils 8.89 6.5 15 5 35.6 5.67
+treenutspeanuts 0.33 9.8 23 8 40.9 6.50
+caloric sweeteners 0 137 314 115 566 173
+fatsoils 0 85.4 196 72 353 118
