@@ -1,9 +1,10 @@
-<!--Attribution:
+﻿<!--Attribution:
 Mike Bostock https://github.com/d3/d3-plugins/tree/master/sankey
 Mike Bostock http://bost.ocks.org/mike/sankey/
 -->
 
 <script>
+(function(){
 var params = {{{ chartParams }}};
 
 params.units ? units = " " + params.units : units = "";
@@ -113,4 +114,5 @@ node.append("text")
         sankey.relayout();
         link.attr("d", path);
   }
+})();
 </script>
