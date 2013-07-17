@@ -1,0 +1,60 @@
+data as of 3/31/2013
+original source http://investments.pimco.com/ShareholderCommunications/External%20Documents/PIMCO%20Bond%20Stats.xls
+
+All Asset All Authority	Short-Term Strategies:	0.017024315
+Short-Term Strategies:	Low Duration Fund	0.002667364
+Short-Term Strategies:	Short Term Fund	0.000123689
+Short-Term Strategies:	Net Cash Equivalents	0.014233262
+All Asset All Authority	US Core and Long Maturity Bond Strategies:	0.14678805
+US Core and Long Maturity Bond Strategies:	GNMA Fund	-
+US Core and Long Maturity Bond Strategies:	Investment Grade Corporate Bond Fund	0.030653125
+US Core and Long Maturity Bond Strategies:	Long Duration Total Return Fund   	0.022530084
+US Core and Long Maturity Bond Strategies:	Long Term Credit Fund	0.011865129
+US Core and Long Maturity Bond Strategies:	Long-Term US Government Fund	0.018619715
+US Core and Long Maturity Bond Strategies:	Mortgage-Backed Securities Fund	-
+US Core and Long Maturity Bond Strategies:	Total Return Fund	0.063119997
+All Asset All Authority	EM and Global Bond Strategies:	0.2315939
+EM and Global Bond Strategies:	Diversified Income Fund	0.043637491
+EM and Global Bond Strategies:	Emerging Local Bond Fund	0.054611227
+EM and Global Bond Strategies:	Emerging Markets Bond Fund	0.036499185
+EM and Global Bond Strategies:	Emerging Markets Corporate Bond Fund	0.009715273
+EM and Global Bond Strategies:	Emerging Markets Currency	0.060991852
+EM and Global Bond Strategies:	Foreign Bond Fund (Unhedged)	0.010786367
+EM and Global Bond Strategies:	Global Advantage Strategy Bond Fund	0.015352505
+EM and Global Bond Strategies:	Global Bond Fund (Unhedged)	-
+All Asset All Authority	Credit Strategies:	0.206718951
+Credit Strategies:	Convertible Fund	0.004837853
+Credit Strategies:	Floating Income Fund	0.030493942
+Credit Strategies:	High Yield Fund	0.061942223
+Credit Strategies:	High Yield Spectrum Fund	0.031239747
+Credit Strategies:	Income Fund	0.053139586
+Credit Strategies:	Senior Floating Rate Fund	0.0250656
+All Asset All Authority	Inflation Related Strategies:	0.041657142
+Inflation Related Strategies:	CommoditiesPLUS™ Strategy Fund	0.031861061
+Inflation Related Strategies:	CommodityRealReturn Strategy Fund®	0.003851854
+Inflation Related Strategies:	Global Advantage® Inflation-Linked Bond Exchange-Traded Fund	0.000508793
+Inflation Related Strategies:	Real Return Asset Fund	0.002100268
+Inflation Related Strategies:	Real Return Fund	0.000333722
+Inflation Related Strategies:	RealEstateRealReturn Strategy Fund	0.003001445
+All Asset All Authority	US Equity Strategies:	0.010193669
+US Equity Strategies:	Fundamental IndexPLUS®	-
+US Equity Strategies:	Fundamental IndexPLUS® AR Fund	0.001181132
+US Equity Strategies:	Small Cap StocksPLUS® AR Strategy Fund	0.002120058
+US Equity Strategies:	Small Company Fundamental IndexPLUS® AR Strategy Fund	0.006217948
+US Equity Strategies:	StocksPLUS® Fund	0.000261064
+US Equity Strategies:	StocksPLUS® Absolute Return Fund	0.000413467
+All Asset All Authority	Global Equity Strategies:	0.094209758
+Global Equity Strategies:	EM Fundamental IndexPLUS® AR Strategy Fund	0.045524887
+Global Equity Strategies:	EqS Dividend Fund	0.000529895
+Global Equity Strategies:	EqS Emerging Markets Fund	0.000728631
+Global Equity Strategies:	EqS Pathfinder Fund	0.01146288
+Global Equity Strategies:	International Fundamental IndexPLUS® AR Strategy Fund	0.034337688
+Global Equity Strategies:	International StocksPLUS® AR Strategy Fund (U.S. Dollar Hedged)	0.000941727
+Global Equity Strategies:	International StocksPLUS® AR Strategy Fund (Unhedged)	0.000684049
+All Asset All Authority	Alternative Strategies:	0.251814214
+Alternative Strategies:	Credit Absolute Return Fund	0.008769096
+Alternative Strategies:	EqS Long/Short Fund	0.00295214
+Alternative Strategies:	Fundamental Advantage Absolute Return Strategy Fund	0.03942724
+Alternative Strategies:	StocksPLUS® Short Strategy Fund	0.124449409
+Alternative Strategies:	Unconstrained Bond Fund	0.05124258
+Alternative Strategies:	Worldwide Fundamental Advantage AR Strategy Fund	0.024973748
