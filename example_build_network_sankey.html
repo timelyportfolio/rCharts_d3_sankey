@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -126,6 +126,7 @@ Mike Bostock http://bost.ocks.org/mike/sankey/
 -->
 
 <script>
+(function(){
 var params = {
  "dom": "sankey1",
 "width":    960,
@@ -248,6 +249,7 @@ node.append("text")
         sankey.relayout();
         link.attr("d", path);
   }
+})();
 </script>
 
 <p>Interact with the sankey plot a little, and try to find the problem in our hastily constructed network.  Hovering over the vertex 4 will reveal our issue.  The edge from 1 to 4 is not as big as the sum of the edges going out from 4.  For this to make sense, unless 4 is magically creating something, the sum of the inflow should equal the sum of the outflow.  Since 4 has four children each with weight of 1 (outflow = 1 + 1 + 1 + 1 = 4), we would expect the inflow to also be 4.  It is only 1 though since we made all our edges&#39; weights = 1 <code>E(g)$weight = 1</code>.  How then would we build our network with edge weights so that for each vertex, the sum of in equals the sum of out.</p>
@@ -320,6 +322,7 @@ Mike Bostock http://bost.ocks.org/mike/sankey/
 -->
 
 <script>
+(function(){
 var params = {
  "dom": "chart259034a337d4",
 "width":    960,
@@ -442,6 +445,7 @@ node.append("text")
         sankey.relayout();
         link.attr("d", path);
   }
+})()
 </script>
 
 <h2>Another Look at Our Network</h2>
