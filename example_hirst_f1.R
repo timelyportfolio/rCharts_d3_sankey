@@ -4,6 +4,8 @@
 #get source from original example
 #this is a JSON, so will need to translate
 
+require(rCharts)
+
 #expect most data to come straight from R
 #in form of source, target, value
 
@@ -32,8 +34,10 @@ links$target <- sapply(links$target, FUN = function(x) {return(nodes[x+1])}) #x+
 
 #now we finally have the data in the form we need
 sankeyPlot <- rCharts$new()
-sankeyPlot$setLib('.')
-sankeyPlot$setTemplate(script = "layouts/chart.html")
+#can grab from web if available
+sankeyPlot$setLib('http://timelyportfolio.github.io/rCharts_d3_sankey')
+#eliminate this since rCharts will auto look for chart.html
+#sankeyPlot$setTemplate(script = "layouts/chart.html")
 
 sankeyPlot$set(
   data = links,
