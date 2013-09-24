@@ -36,10 +36,8 @@ links$target <- sapply(links$target, FUN = function(x) {return(nodes[x+1])}) #x+
 sankeyPlot <- rCharts$new()
 #can grab from web if available
 sankeyPlot$setLib('http://timelyportfolio.github.io/rCharts_d3_sankey')
-sankeyPlot$setLib(paste0(getwd()))
 #explicitly specify this since chart.html is default
 sankeyPlot$setTemplate(script = "layouts/chart_static_title.html")
-
 sankeyPlot$set(
   data = links,
   nodeWidth = 15,
@@ -50,5 +48,4 @@ sankeyPlot$set(
   units = "points",
   margin = list(right = 20, left = 20, bottom = 50, top = 20)
 )
-
 sankeyPlot
